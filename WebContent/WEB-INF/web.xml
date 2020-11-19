@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  
+	<!-- 예외 처리 -->
+	<!-- 따로 에러페이지 임포트 안해주면 해당 코드 오류는 이제 무조건 저 페이지들만 뜸 -->
+	<!-- 500은 따로 임포트 해주면 설정한 특정 페이지 뜨게 할 수 있는데 404는 안됨 -->
+	<!-- 404 : 주소의 페이지 파일명 자체가 잘못돼서 연결할 수 없을때 -->
+	<!-- 500 : 주소의 회원번호나 상품번호 등 ? 이후 참조값이 잘못돼서 연결할 수 없을때 --> 
+  
+	<display-name>Exception</display-name>
+	<error-page>
+ 	 <error-code>404</error-code>
+ 	 <location>/exception404.jsp</location>
+	</error-page>
+	<error-page>
+	 <error-code>500</error-code>
+ 	 <location>/exception500.jsp</location>
+	</error-page>
+
+</web-app>
