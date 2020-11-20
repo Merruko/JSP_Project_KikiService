@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
-    <wb-module deploy-name="JSP_Project_Kiki">
+        
+    <wb-module deploy-name="JSP_Project_KikiService">
+                
         <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+                
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
-        <property name="context-root" value="JSP_Project_Kiki"/>
-        <property name="java-output-path" value="/JSP_Project_Kiki/build/classes"/>
+                
+        <property name="java-output-path" value="/JSP_Project_KikiService/build/classes"/>
+        <property name="context-root" value="JSP_Project_KikiService"/>
+            
     </wb-module>
+    
 </project-modules>
