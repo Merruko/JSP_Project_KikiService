@@ -15,7 +15,7 @@
 </style>
 
 <body>
-<jsp:include page="menu.jsp" />
+	<jsp:include page="menu.jsp" />
 	<div id="container">
 		<div class="title">
 			<h1>Welcome to Kiki's Management Service</h1>

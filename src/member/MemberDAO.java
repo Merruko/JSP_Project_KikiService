@@ -66,7 +66,7 @@ public class MemberDAO {
 		}
 	}
 	
-	// 사원 정보 추가 
+	// 회원 정보 추가 
 	public void addMember(Member member) {
 		connDB();
 		String sql = "INSERT INTO t_member (memberId, passwd, name, gender, joinDate) VALUES (?, ?, ?, ?, SYSDATE)";
@@ -84,7 +84,7 @@ public class MemberDAO {
 		}
 	}
 	
-	// 전체 사원 정보 조회 
+	// 전체 회원 정보 조회 
 	public ArrayList<Member> getListAll(){
 		ArrayList<Member> list = new ArrayList<>();
 		connDB();
@@ -116,7 +116,7 @@ public class MemberDAO {
 		return list;
 	}
 	
-	// 특정 사원 정보 조회 
+	// 특정 회원 정보 조회 
 	public Member getDB(String memId) {
 		connDB();
 		String sql = "SELECT * FROM t_member WHERE memberId = ?";
@@ -139,7 +139,7 @@ public class MemberDAO {
 		return member;
 	}
 	
-	// 사원 정보 갱신
+	// 회원 정보 갱신
 	public boolean update(Member member) {
 		connDB();
 		String sql = "UPDATE t_member SET passwd=?, name=?, gender=? WHERE memberId = ?";
@@ -159,7 +159,7 @@ public class MemberDAO {
 		return true;
 	}
 	
-	// 사원 정보 삭제
+	// 회원 정보 삭제
 	public boolean delete(String memId) {
 		connDB();
 		String sql = "DELETE FROM t_member WHERE memberId = ?";
